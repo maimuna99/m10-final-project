@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  mongodb:
+    image: mongo:5.0.2
+    restart: unless-stopped
+    ports:
+      - 3000
+  app:
+    depends_on:
+      - mongodb
+    build: ./m10-final-project-1
+    restart: unless-stopped
+    environment:
+      - DB_HOST=mongodb
+      - DB_USER=maimunawahaibi
+      - DB_PASSWORD=Al0JOMTtDS2CPhQL
+      - DB_NAME=cluster0
+      - DB_PORT=3000
+    stdin_open: true
+    tty: true

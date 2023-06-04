@@ -2,7 +2,7 @@
 
 Description:
 
-Simple Note taking is an application designed for  multiple users to add notes both privately & publicly. It provides a database model, multiple CRUD (Create, Read, Update, Delete) operations, and the ability to host the application locally. The main features of this application include:
+Simple Note taking is an application designed for multiple users to add notes both privately & publicly. It provides a database model, multiple CRUD (Create, Read, Update, Delete) operations, and the ability to host the application locally. The main features of this application include:
 
 User Management: The application stores information about users and provides functionality for user login and logout with authentication.
 
@@ -16,16 +16,19 @@ Markdown Rendering: The application is capable of rendering HTML pages from mark
 
 The project is stored in my Github repository, providing version control and collaboration features.
 
-The application is built using  ExpressJS.
+The application is built using ExpressJS.
 
 ## Getting Started
 
-In the Client(marn-authpart) project directory,  run:
+In the Client(marn-authpart) project directory, run:
 
 ### `npm run start`
 
 Runs the app in the development mode in http://localhost:3000
 
-In the Server(mern-auth-backend part) project directory,  run:
+In the Server(mern-auth-backend part) project directory, run:
+
 ### `npm run start`
 
+# vercel deplyment link:
+https://m10-final-project.vercel.app/

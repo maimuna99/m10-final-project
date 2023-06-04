@@ -26,7 +26,7 @@ router.get("/private", async (req, res) => {
 
 // Create a new note
 router.post("http://localhost:3000/Createnotes", async (req, res) => {
-    console.log("skdjnclsjdnlsjd")
+  console.log("skdjnclsjdnlsjd");
   const { title, content, isPublic } = req.body;
 
   try {

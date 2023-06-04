@@ -1,6 +1,6 @@
 // note.js
 
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const noteSchema = new mongoose.Schema(
   {
@@ -18,13 +18,13 @@ const noteSchema = new mongoose.Schema(
     },
     user: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'User',
+      ref: "User",
       required: true,
     },
   },
   { timestamps: true }
 );
 
-const Note = mongoose.model('Note', noteSchema);
+const Note = mongoose.model("Note", noteSchema);
 
 module.exports = Note;

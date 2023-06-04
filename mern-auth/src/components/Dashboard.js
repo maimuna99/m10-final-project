@@ -10,14 +10,14 @@ const Dashboard = ({ auth: { user } }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-	
 
     try {
       const response = await axios.post("http://localhost:3000/Createnotes", {
         title,
         content,
         isPublic,
-      });console.log("skdjnclsjdnlsjd")
+      });
+      console.log("skdjnclsjdnlsjd");
       console.log(response.data);
       // Clear form fields after submitting the note
       setTitle("");
